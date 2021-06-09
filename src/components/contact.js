@@ -14,7 +14,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function Contact(props) {
   return (
-    <div className={`flex flex-col ${props.classNames} space-y-1`}>
+    <div
+      className={`flex flex-row space-x-2 md:space-x-0 md:flex-col ${props.classNames} space-y-1`}
+    >
       <h2 className="mb-2 text-xl font-bold text-haip-dark uppercase">
         <FontAwesomeIcon
           icon={faAddressBook}

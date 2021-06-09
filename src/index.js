@@ -15,19 +15,19 @@ ReactDOM.hydrate(
   <React.StrictMode>
     <div className="flex flex-col w-full justify-center items-center bg-gray-200 text-gray-600">
       <div className="max-w-5xl w-full bg-white my-10 p-10 rounded-lg shadow-2xl">
-        <div className="flex flex-row border-b pb-4 mb-4 border-gray-100">
-          <div className="w-2/3 border-r-2 mr-4 border-gray-100">
+        <div className="justify-center flex flex-col md:flex-row border-b pb-4 mb-4 border-gray-100">
+          <div className="md:w-2/3 md:border-r-2 mr-4 md:border-gray-100">
             <Header />
           </div>
-          <div className="w-1/3">
+          <div className="md:w-1/3 flex justify-start pt-4 md:pt-0">
             <Contact />
           </div>
         </div>
-        <div className="flex flex-row">
-          <div className="w-2/3 border-r-2 mr-4 border-gray-100">
+        <div className="flex flex-col md:flex-row">
+          <div className="md:w-2/3 border-b-2 md:border-b-0 md:border-r-2 md:mr-4 border-gray-100">
             <WorkExperience />
           </div>
-          <div className="w-1/3 space-y-4">
+          <div className="flex flex-col pt-4 md:w-1/3 space-y-4">
             <Awards />
             <Skills />
             <Langauages />
